@@ -82,7 +82,7 @@ class Unit_7Controller extends Controller
 			
 			$fullName = $this->uploadDir .'/'. $fileName;
 			if($fileName !== "." && $fileName !== ".." && @getimagesize($fullName) > 0){ // якщо це не директорія і якщо це зображення.
-				$result .= '<img style="margin-left:2%; margin-top:2%;" " src="/'. $fullName .'">';
+				$result .= '<img style="margin-left:2%; margin-top:2%; width:100px; heigth:200px;"  src="/'. $fullName .'">';
 			}else{
 				//echo "Помилка!.\n";
 			}
